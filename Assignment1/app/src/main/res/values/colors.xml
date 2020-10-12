@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <!--top bar-->
+    <color name="colorPrimaryDark">#07A3EB</color>
+    <!--title bar-->
+    <color name="colorPrimary">#58CBFF</color>
+    <!-- sb color-->
+    <color name="colorAccent">#07A3EB</color>
+    <color name="colorBackground">#FFFFFF</color>
+
+    <color name="colorWorstTip">#F52471</color>
+    <color name="colorBestTip">#F5C401</color>
+
+    <!--text-->
+    <color name="textPrimary">#00131C</color>
+    <color name="textSecondary">#90969B</color>
 </resources>

@@ -7,13 +7,144 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+    <!--left side-->
+
+    <!--base-->
     <TextView
+            android:id="@+id/tvBaseLabel"
+            android:text="base"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="80dp"
+            android:textSize="18sp" android:textColor="@color/textSecondary"
+            android:textAlignment="textEnd"
+            android:textStyle="bold" android:fontFamily="sans-serif-black"/>
+
+    <TextView
+            android:id="@+id/tvTipPercent"
+            android:text="15%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvBaseLabel"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="@id/tvBaseLabel"
+            android:textSize="18sp" android:textColor="@color/colorAccent" android:textAlignment="textEnd"
+            android:textStyle="bold" android:fontFamily="sans-serif-black"/>
+            <!--android:textColorHighlight="@color/colorAccent"-->
+    />
+
+    <TextView
+            android:id="@+id/tvTipLabel"
+            android:text="tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvTipPercent"
+            android:layout_marginTop="48dp"
+            app:layout_constraintEnd_toEndOf="@id/tvBaseLabel"
+            android:textSize="18sp" android:textColor="@color/textSecondary"
+            android:textAlignment="textEnd"
+            android:textStyle="bold" android:lineSpacingExtra="14sp" android:textAllCaps="false"
+            android:fontFamily="sans-serif-black"/>
+
+    <TextView
+            android:id="@+id/tvPeopleLabel"
+            android:text="# of people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/tvBaseLabel"
+            android:textSize="18sp"
+            android:textColor="@color/textSecondary" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvTipLabel" android:textAlignment="viewEnd"
+            android:fontFamily="sans-serif-black" android:textStyle="bold"/>
+
+
+    <TextView
+            android:id="@+id/tvTotalLabel"
+            android:text="total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/tvBaseLabel"
+            android:textSize="18sp" android:textColor="@color/textSecondary"
+            android:textAlignment="textEnd"
+            android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/tvPeopleLabel"
+            android:fontFamily="sans-serif-black"/>
+
+    <!--right side-->
+    <EditText
+            android:id="@+id/etBase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="8"
+            android:textSize="24sp" app:layout_constraintStart_toEndOf="@+id/tvBaseLabel"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBaseline_toBaselineOf="@id/tvBaseLabel" android:fontFamily="serif-monospace"
+            android:textColor="@color/textPrimary" android:textStyle="bold"/>
+
+    <SeekBar
+            android:layout_width="216dp"
+            android:layout_height="20dp"
+            android:id="@+id/sbTip" app:layout_constraintStart_toEndOf="@+id/tvTipPercent"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="@id/tvTipPercent"
+            app:layout_constraintTop_toTopOf="@id/tvTipPercent"
+            android:max="30"/>
+    <TextView
+            android:id="@+id/tvTipDescrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="great"
+            app:layout_constraintStart_toStartOf="@id/sbTip"
+            app:layout_constraintEnd_toEndOf="@id/sbTip"
+            android:textStyle="bold" android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/sbTip"/>
+    <TextView
+            android:id="@+id/tvTipAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="3.78" app:layout_constraintStart_toEndOf="@+id/tvTipLabel"
+            android:layout_marginStart="32dp" android:textSize="24sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/tvTipLabel"
+            android:fontFamily="serif-monospace" android:textStyle="bold"
+            android:textColor="@color/textPrimary"/>
+    <EditText
+            android:id="@+id/etPeopleAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="1"
+            android:ems="4"
+            app:layout_constraintStart_toEndOf="@+id/tvPeopleLabel"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBaseline_toBaselineOf="@id/tvPeopleLabel"
+            android:textSize="24sp" android:fontFamily="serif-monospace" android:textStyle="bold"
+            android:textColor="@color/textPrimary"/>
+
+
+    <TextView
+            android:id="@+id/tvTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="12.44" app:layout_constraintStart_toEndOf="@+id/tvTotalLabel"
+            android:layout_marginStart="32dp" android:textSize="24sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/tvTotalLabel"
+            android:fontFamily="serif-monospace" android:textStyle="bold"
+            android:textColor="@color/textPrimary"/>
+
+    <!--footer view-->
+    <TextView
+            android:id="@+id/tvFooter"
+            android:text="made with 💖 by jchens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginBottom="32dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:fontFamily="serif-monospace" android:textSize="18sp" android:textAllCaps="false"
+            android:textColor="@color/textPrimary" android:textStyle="bold"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
