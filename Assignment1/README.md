@@ -30,7 +30,7 @@ Here's a walkthrough of implemented calculator:
 
 ## Notes
 
-When adding the option to input the # of people, I ran into the same issue with the base amount where the app would crash if the input was blank. To address, I added a check for that, and used the default value of 1 if an invalid (0 or blank) # of people was given.
+When adding the option to input the # of people, I ran into the same issue with the base amount where the app would crash if the input was blank. To address this bug, I added a check to default to 1 person if any invalid inputs (0 or blank) were given. Otherwise, the input would be converted and used to divide the total base + tip.
 
 ## License
 
