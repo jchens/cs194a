@@ -24,9 +24,9 @@ The following **extensions** are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of implemented calculator:
 
-<img src='/Assignment1/walkthrough.gif?raw=true' title='Video Walkthrough' width='30%' alt='Video Walkthrough' />
+<img src='/Assignment1/walkthrough.gif?raw=true' title='Video Walkthrough' width='40%' alt='Video Walkthrough' />
 
 ## Notes
 
