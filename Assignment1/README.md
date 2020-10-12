@@ -18,6 +18,7 @@ The following **required** functionality is completed:
 The following **extensions** are implemented:
 
 * [x] Custom colors palette selected
+* [x] Changed the text color & font
 * [x] Added emojis to the text describing the tip (“poor”, “good”, etc)
 * [x] Added the ability to split the bill across any number of people
 * [x] Show currency symbols
