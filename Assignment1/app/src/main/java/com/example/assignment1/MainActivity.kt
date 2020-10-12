@@ -12,7 +12,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 private const val TAG = "MainActivity"
 private const val INITIAL_TIP_PERCENT = 15
-private const val INITIAL_PEOPLE = 1
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,8 +22,8 @@ class MainActivity : AppCompatActivity() {
         sbTip.progress = INITIAL_TIP_PERCENT
         tvTipPercent.text = "$INITIAL_TIP_PERCENT%"
         updateTipDescription(sbTip.progress)
-        tvTipAmount.text = "N/A"
-        tvTotalAmount.text = "N/A"
+//        tvTipAmount.text = "N/A"
+//        tvTotalAmount.text = "N/A"
 
 
         sbTip.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
@@ -96,7 +95,7 @@ class MainActivity : AppCompatActivity() {
         var numPeople = 1
 
         if (etPeopleAmount.text.isBlank()) {
-            etPeopleAmount.setText("1")
+//            etPeopleAmount.setText("1")
         } else if (etPeopleAmount.text.toString().toInt() > 0) {
             numPeople = etPeopleAmount.text.toString().toInt()
         }

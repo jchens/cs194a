@@ -82,7 +82,8 @@
             android:textSize="24sp" app:layout_constraintStart_toEndOf="@+id/tvBaseLabel"
             android:layout_marginStart="32dp"
             app:layout_constraintBaseline_toBaselineOf="@id/tvBaseLabel" android:fontFamily="serif-monospace"
-            android:textColor="@color/textPrimary" android:textStyle="bold"/>
+            android:textColor="@color/textPrimary" android:textStyle="bold"
+    />
 
     <SeekBar
             android:layout_width="216dp"
@@ -109,19 +110,22 @@
             android:layout_marginStart="32dp" android:textSize="24sp"
             app:layout_constraintBaseline_toBaselineOf="@id/tvTipLabel"
             android:fontFamily="serif-monospace" android:textStyle="bold"
-            android:textColor="@color/textPrimary"/>
+            android:textColor="@color/textPrimary"
+            android:hint="N/A"
+    />
     <EditText
             android:id="@+id/etPeopleAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:text="1"
             android:ems="4"
             app:layout_constraintStart_toEndOf="@+id/tvPeopleLabel"
             android:layout_marginStart="32dp"
             app:layout_constraintBaseline_toBaselineOf="@id/tvPeopleLabel"
             android:textSize="24sp" android:fontFamily="serif-monospace" android:textStyle="bold"
-            android:textColor="@color/textPrimary"/>
+            android:textColor="@color/textPrimary"
+            android:hint="1"
+    />
 
 
     <TextView
@@ -132,7 +136,9 @@
             android:layout_marginStart="32dp" android:textSize="24sp"
             app:layout_constraintBaseline_toBaselineOf="@id/tvTotalLabel"
             android:fontFamily="serif-monospace" android:textStyle="bold"
-            android:textColor="@color/textPrimary"/>
+            android:textColor="@color/textPrimary"
+            android:hint="N/A"
+    />
 
     <!--footer view-->
     <TextView
