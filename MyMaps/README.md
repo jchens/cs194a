@@ -1,4 +1,4 @@
-# My Maps
+# Let's Explore
 
 ## Jessica Chen
 

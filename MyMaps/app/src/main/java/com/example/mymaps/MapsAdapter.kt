@@ -34,7 +34,8 @@ class MapsAdapter(val context: Context, val userMaps: List<UserMap>, val onoClic
         val tvTitle = holder.itemView.findViewById<TextView>(R.id.tvMapTitle)
         tvTitle.text = userMap.title
         val tvNumPlaces = holder.itemView.findViewById<TextView>(R.id.tvNumPlaces)
-        tvNumPlaces.text = "${userMap.places.size.toString()} places to explore"
+        val noun = if (userMap.places.size == 1) "place" else "places"
+        tvNumPlaces.text = "${userMap.places.size.toString()} $noun to explore"
     }
 
     override fun getItemCount(): Int {
