@@ -1,39 +1,41 @@
-# My Maps 
+# My Maps
 
 ## Jessica Chen
 
-**My Maps** displays a list of maps, each of which show user-defined markers with a title, description, and location. The user can also create a new map. 
+**Let's Explore** displays a list of maps, each of which show user-defined markers with a title, description, and location. The user can also create a new map.
 
-Time spent: **X** hours spent in total
+Time spent: **10** hours spent in total
 
-## Functionality 
+## Functionality
 
 The following **required** functionality is completed:
 
-* [ ] The list of map titles is displayed.
-* [ ] After tapping on a map title, the associated markers in the map are shown.
-* [ ] The user is able to create a new map.
+* [x] The list of map titles is displayed.
+* [x] After tapping on a map title, the associated markers in the map are shown.
+* [x] The user is able to create a new map.
 
 The following **extensions** are implemented:
 
-* [ ] When a map marker is created, the pin is animated.
-* [ ] List anything else that you did to improve the app functionality or design!
+* [x] Changed the color scheme of the app
+* [x] In the initial screen, the number of places in each map is shown along with the title.
+* [x] Marker changed from the default icon
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of the implemented maps:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='/MyMaps/existing_map.gif?raw=true' title='Exploring Existing Maps' width='40%' alt='Exploring Existing Maps' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+<img src='/MyMaps/new_map.gif?raw=true' title='Creating a New Map' width='40%' alt='Creating a New Map' />
+
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+The most challenging part of this project was trying to work around the default theme to customize everything. At one point, I tried adding another theme so the action bar wouldn't show up, but ever after multiple Stack Overflow posts, it wasn't working out. Understanding how to convert vector images into Bitmap images also took quite a while, but it worked out in the end!
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2020] Jessica Chen
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

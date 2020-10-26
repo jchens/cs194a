@@ -3,14 +3,19 @@ package com.example.mymaps
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.content.res.AppCompatResources
+import androidx.core.graphics.drawable.toBitmap
 import com.example.mymaps.models.UserMap
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.LatLngBounds
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.maps.android.ui.IconGenerator
 
 private const val TAG = "DisplayMapActivity.kt"
 
@@ -25,6 +30,7 @@ class DisplayMapActivity : AppCompatActivity(), OnMapReadyCallback {
 
         // cast as UserMap to get our data structure back
         userMap = intent.getSerializableExtra(EXTRA_USER_MAP) as UserMap
+        supportActionBar?.title = userMap.title
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager
@@ -42,12 +48,30 @@ class DisplayMapActivity : AppCompatActivity(), OnMapReadyCallback {
      * installed Google Play services and returned to the app.
      */
     override fun onMapReady(googleMap: GoogleMap) {
-        mMap = googleMap
         Log.i(TAG, "onMapReady: ${userMap.title}")
 
-        // Add a marker in Sydney and move the camera
-        val sydney = LatLng(-34.0, 151.0)
-        mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+        mMap = googleMap
+        mMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
+
+        val boundsBuilder = LatLngBounds.Builder()
+        for (place in userMap.places) {
+            val coords = LatLng(place.lat, place.long)
+//            val markerBitmap = AppCompatResources.getDrawable(this, R.drawable.ic_baseline_push_pin_24)?.toBitmap()
+//            val customMarker = BitmapDescriptorFactory.fromBitmap(markerBitmap)
+
+            val iconGenerator = IconGenerator(this)
+            iconGenerator.setStyle(IconGenerator.STYLE_WHITE);
+            val bubbleBitmap = iconGenerator.makeIcon("📌");
+            val customBubble = BitmapDescriptorFactory.fromBitmap(bubbleBitmap)
+
+            mMap.addMarker(MarkerOptions()
+                .position(coords)
+                .title(place.title)
+                .snippet(place.description)
+                .icon(customBubble)
+            )
+            boundsBuilder.include(coords)
+        }
+        mMap.animateCamera(CameraUpdateFactory.newLatLngBounds(boundsBuilder.build(), 1000, 1000, 100))
     }
 }
