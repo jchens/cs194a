@@ -2,7 +2,7 @@
 
 ## jessica chen
 
-**splip™️** computes the tip and total amount for a bill, split across the total number of people. The app uses the base amount and tip percentage to calculate the amount owed, and it also describes the quality of service based on the tip.
+**splip** computes the tip and total amount for a bill, split across the total number of people. The app uses the base amount and tip percentage to calculate the amount owed, and it also describes the quality of service based on the tip.
 
 Time spent: **6** hours spent in total
 
