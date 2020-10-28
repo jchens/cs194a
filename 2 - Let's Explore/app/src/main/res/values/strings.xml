@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">"Let's Explore"</string>
+    <string name="title_activity_display_map">Your map</string>
+    <string name="title_activity_create_map">Create A Map</string>
+</resources>
