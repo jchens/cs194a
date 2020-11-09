@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">3_YelpClone</string>
+    <string name="app_name">Restaurant Finder</string>
+    <string name="search_title">Search restaurants</string>
+    <string name="search_hint">Search by name, cuisine, or keywords</string>
 </resources>

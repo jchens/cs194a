@@ -2,33 +2,30 @@
 
 ## *Jessica Chen*
 
-**Restaurant Finder** extracts a list of search results from the Yelp API and displays the results in a scrollable list. 
+**Restaurant Finder** extracts a list of search results from the Yelp API and displays the results in a scrollable list.
 
-Time spent: **7** hours spent in total
+Time spent: **6** hours spent in total
 
-## Functionality 
+## Functionality
 
 The following **required** functionality is completed:
 
 * [x] Ability to query the Yelp API to get results from a search query
 * [x] The search results are displayed in a RecyclerView
 
-The following **extension** is implemented:
+The following **extensions** are implemented:
 
-* [x] Add a search component in the action bar so the user can query for another item instead
-of the one hardcoded in the app
+* [ ] Add a search component in the action bar so the user can query for another item instead of the one hardcoded in the app
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of the app:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+<img src='/3_RestaurantFinder/assets/walkthrough.gif?raw=true' title='Exploring Existing Maps' width='50%' alt='Searching for restaurants' />
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+It was a bit difficult at first adding the search menu option to the app bar and passing in the right parameters to properly handle the intent, but I'm glad it worked out in the end.
 
 ## License
 
