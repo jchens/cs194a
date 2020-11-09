@@ -27,7 +27,7 @@ The following **extensions** are implemented:
 
 Here's a walkthrough of implemented calculator:
 
-<img src='/Assignment1/walkthrough.gif?raw=true' title='Video Walkthrough' width='40%' alt='Video Walkthrough' />
+<img src='/1_Splip/walkthrough.gif?raw=true' title='Video Walkthrough' width='40%' alt='Video Walkthrough' />
 
 ## Notes
 
