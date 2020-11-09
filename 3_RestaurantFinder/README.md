@@ -4,7 +4,7 @@
 
 **Restaurant Finder** extracts a list of search results from the Yelp API and displays the results in a scrollable list. 
 
-Time spent: **6** hours spent in total
+Time spent: **7** hours spent in total
 
 ## Functionality 
 
@@ -13,10 +13,10 @@ The following **required** functionality is completed:
 * [x] Ability to query the Yelp API to get results from a search query
 * [x] The search results are displayed in a RecyclerView
 
-The following **extensions** are implemented:
+The following **extension** is implemented:
 
-* [ ] User sees a descriptive error message if internet is not available
-* [ ] List anything else that you did to improve the app functionality or design!
+* [x] Add a search component in the action bar so the user can query for another item instead
+of the one hardcoded in the app
 
 ## Video Walkthrough
 
