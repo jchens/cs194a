@@ -28,14 +28,14 @@ Here's a walkthrough of the implemented maps:
 * See all maps & their place count
 * Tap on a map to view all pinned places
 * Click on pins to view their title & description
-<img src='/MyMaps/existing_map.gif?raw=true' title='Exploring Existing Maps' width='40%' alt='Exploring Existing Maps' />
+<img src='/2_LetsExplore/existing_map.gif?raw=true' title='Exploring Existing Maps' width='40%' alt='Exploring Existing Maps' />
 
 ### Creating a map
 * Customize your map name
 * Long press to add a pin and its title & description
 * Remove a pin by tapping its title/description window
 * Map list updates to include new map
-<img src='/MyMaps/new_map.gif?raw=true' title='Creating a New Map' width='40%' alt='Creating a New Map' />
+<img src='/2_LetsExplore/new_map.gif?raw=true' title='Creating a New Map' width='40%' alt='Creating a New Map' />
 
 
 ## Notes
